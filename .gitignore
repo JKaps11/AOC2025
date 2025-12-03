@@ -1,0 +1,4 @@
+/node_modules
+
+# Ignore Advent of Code input files
+src/day*/*.txt
