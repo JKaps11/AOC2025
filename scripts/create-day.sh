@@ -16,7 +16,7 @@ mkdir -p "$DIR"
 touch "$DIR/problem1.ts"
 touch "$DIR/problem2.ts"
 touch "$DIR/input.txt"
-touch "$DIR/test.ts"
+touch "$DIR/test.txt"
 
 # --- Write template into problem files ---
 cat <<EOF > "$DIR/problem1.ts"
