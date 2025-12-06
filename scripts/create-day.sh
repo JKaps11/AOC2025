@@ -23,7 +23,7 @@ cat <<EOF > "$DIR/problem1.ts"
 import { readFileSync } from "node:fs";
 
 export async function run(): Promise<number> {
-    const fileContents: string = readFileSync('src/$DAY/input.txt', 'utf-8');
+    const fileContents: string = readFileSync('src/$DAY/test.txt', 'utf-8');
     const lines: string[] = fileContents.split(/\\r?\\n/);
 
     return 0;
@@ -34,7 +34,7 @@ cat <<EOF > "$DIR/problem2.ts"
 import { readFileSync } from "node:fs";
 
 export async function run(): Promise<number> {
-    const fileContents: string = readFileSync('src/$DAY/input.txt', 'utf-8');
+    const fileContents: string = readFileSync('src/$DAY/test.txt', 'utf-8');
     const lines: string[] = fileContents.split(/\\r?\\n/);
 
     return 0;
