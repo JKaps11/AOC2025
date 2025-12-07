@@ -21,8 +21,9 @@ touch "$DIR/test.txt"
 # --- Write template into problem files ---
 cat <<EOF > "$DIR/problem1.ts"
 import { readFileSync } from "node:fs";
+import { Logger } from "../logger/Logger";
 
-export async function run(): Promise<number> {
+export async function run(logger: Logger): Promise<number> {
     const fileContents: string = readFileSync('src/$DAY/test.txt', 'utf-8');
     const lines: string[] = fileContents.split(/\\r?\\n/);
 
@@ -32,8 +33,9 @@ EOF
 
 cat <<EOF > "$DIR/problem2.ts"
 import { readFileSync } from "node:fs";
+import { Logger } from "../logger/Logger";
 
-export async function run(): Promise<number> {
+export async function run(logger: Logger): Promise<number> {
     const fileContents: string = readFileSync('src/$DAY/test.txt', 'utf-8');
     const lines: string[] = fileContents.split(/\\r?\\n/);
 
